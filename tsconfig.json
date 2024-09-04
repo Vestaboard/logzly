@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "outDir": "./.build",
+    "declaration": true,
+    "removeComments": true,
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "noEmit": false,
+    "jsx": "react-jsx",
+    "composite": false,
+    "incremental": true,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false
+  },
+  "include": ["src"],
+  "exclude": []
+}

@@ -1,0 +1,21 @@
+{
+  "name": "logzly",
+  "version": "1.0.0",
+  "description": "A lightweight logging utility",
+  "main": ".build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "release": "yarn build && NPM_TOKEN=$(grep NPM_TOKEN .env.local | cut -d \"=\" -f2) npm publish"
+  },
+  "author": "Tyson Cadenhead",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.5.3",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.5.4"
+  }
+}
