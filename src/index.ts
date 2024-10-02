@@ -9,22 +9,22 @@ export interface ILogger {
 
 const consoleLogger: ILogger = {
   trace: (topic: string, data?: Object) => {
-    console.log(topic, data);
+    console.log(topic, JSON.stringify(data || {}));
   },
   debug: (topic: string, data?: Object) => {
-    console.debug(topic, data);
+    console.debug(topic, JSON.stringify(data || {}));
   },
   info: (topic: string, data?: Object) => {
-    console.info(topic, data);
+    console.info(topic, JSON.stringify(data || {}));
   },
   warn: (topic: string, data?: Object) => {
-    console.warn(topic, data);
+    console.warn(topic, JSON.stringify(data || {}));
   },
   error: (topic: string, data?: Object) => {
-    console.error(topic, data);
+    console.error(topic, JSON.stringify(data || {}));
   },
   fatal: (topic: string, data?: Object) => {
-    console.error(topic, data);
+    console.error(topic, JSON.stringify(data || {}));
   },
 };
 
